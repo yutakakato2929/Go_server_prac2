@@ -1,0 +1,22 @@
+<!-- code:web5-1 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <form action="/login" method="POST">
+        名前：<input type="text" name="username">
+        <br />
+        パスワード：<input type="password" name="password">
+        <br />
+        <input type="submit" value="送信">
+        <br />
+    </form>
+    {{ range . }}
+    <p>{{ . }}</p>
+    {{ end }}
+</body>
+</html>
